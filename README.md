@@ -6,11 +6,6 @@
 **Język programowania:** Python 3.x  
 **Temat:** Eksperymentalna analiza algorytmu Knutha-Morrisa-Pratta (KMP) w kontekście wyszukiwania wzorców tekstowych.
 
-**Autor:** [Imię i nazwisko]  
-**Kierunek / grupa:** [Kierunek i grupa]  
-**Prowadzący:** [Imię i nazwisko prowadzącego]  
-**Rok akademicki:** [Rok akademicki]
-
 ## 2. Cel projektu
 
 Celem projektu jest implementacja oraz przeprowadzenie eksperymentalnej analizy algorytmu Knutha-Morrisa-Pratta (KMP), służącego do wyszukiwania wystąpień określonego wzorca w tekście.
