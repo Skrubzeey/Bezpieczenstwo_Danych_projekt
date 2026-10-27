@@ -1,0 +1,56 @@
+
+# Pliki Pythona
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Środowiska wirtualne
+.venv/
+venv/
+env/
+ENV/
+
+# Narzędzia i cache
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Konfiguracja IDE i edytorów
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Pliki systemowe
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Zmienne środowiskowe i sekrety
+.env
+.env.*
+!.env.example
+
+# Pliki dystrybucyjne
+build/
+dist/
+*.egg-info/
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# Pliki tymczasowe i logi
+*.log
+*.tmp
+*.bak
+
+# Wyniki eksperymentów i benchmarków
+results/
+benchmark_results/
+
+# na ten moment nie odkomentować/później warto
+#experiments/
+#plots/
