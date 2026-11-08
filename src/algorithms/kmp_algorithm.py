@@ -21,3 +21,40 @@ def compute_lps(pattern: str) -> list[int]:
             i += 1
 
     return lps
+
+
+def kmp_algorithm(text: str, pattern: str) -> list[int]:
+    n = len(text)
+    m = len(pattern)
+
+    lps = compute_lps(pattern=pattern)
+    i = 0
+    j = 0
+    res = []
+
+    while i < n:
+
+        # jeżeli dwa znaki się równają przesuń wskaźnik dalej
+        if text[i] == pattern[j]:
+            i += 1
+            j += 1
+
+            # jeżeli pełen pattern się zgadza
+            # wtedy dodaj indeks startowy do res
+            if j == m:
+                res.append(i - j)
+
+                # wykorzystujemy poprzedni indeks lps
+                # aby pominąć niepotrzebne porównania
+                j = lps[j - 1]
+
+        # jeżeli nie mamy równości
+        else:
+
+            # wykorzystujemy poprzedni lps index
+            # aby unikać niepotrzebnych porównań
+            if j != 0:
+                j = lps[j - 1]
+            else:
+                i += 1
+    return res
