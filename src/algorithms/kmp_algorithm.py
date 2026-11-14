@@ -27,6 +27,13 @@ def kmp_algorithm(text: str, pattern: str) -> list[int]:
     n = len(text)
     m = len(pattern)
 
+    # dodanie dodatkowego warunku jeżeli pattern jest pusty lub jeżeli pattern jest zbyt długi
+    if m == 0:
+        return list(range(n + 1))
+
+    if m > n:
+        return []
+
     lps = compute_lps(pattern=pattern)
     i = 0
     j = 0
