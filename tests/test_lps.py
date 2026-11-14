@@ -1,6 +1,6 @@
 import pytest
 
-from src.algorithms.kmp_algorithm import compute_lps
+from algorithms.kmp_algorithm import compute_lps
 
 
 @pytest.mark.parametrize(

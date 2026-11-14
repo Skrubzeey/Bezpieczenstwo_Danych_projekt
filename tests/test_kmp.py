@@ -1,5 +1,5 @@
 import pytest
-from src.algorithms.kmp_algorithm import kmp_algorithm
+from algorithms.kmp_algorithm import kmp_algorithm
 
 
 @pytest.mark.parametrize(

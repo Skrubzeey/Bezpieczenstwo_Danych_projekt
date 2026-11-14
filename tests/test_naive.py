@@ -1,6 +1,6 @@
 import pytest
 
-from src.algorithms.naive_algorithm import naive_search
+from algorithms.naive_algorithm import naive_search
 
 
 @pytest.mark.parametrize(
